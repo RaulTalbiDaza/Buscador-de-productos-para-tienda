@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Inventario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Buscador de Productos</h1>
+        <div class="filters-container">
+            <input type="text" id="searchInput" placeholder="Buscar por nombre, descripción, talla...">
+            <div class="price-filters">
+                <input type="number" id="minPrice" placeholder="Precio mín (€)" min="0" step="1">
+                <input type="number" id="maxPrice" placeholder="Precio máx (€)" min="0" step="1">
+            </div>
+        </div>
+        <div id="resultsList" class="results-container">
+            <!-- Los resultados aparecerán aquí -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,262 @@
+/* style.css - Estilos básicos y funcionales */
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de filtros */
+.filters-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Filtros de precio (min y max) */
+.price-filters {
+    display: flex;
+    gap: 10px;
+}
+
+.price-filters input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.results-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.product-card {
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    background-color: #fafafa;
+}
+
+/* --- Carrusel de Imágenes (Estilo Instagram) --- */
+.carousel {
+    position: relative;
+    width: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    background-color: #e0e0e0;
+    min-height: 250px;
+    /* Altura mínima mientras no hay fotos */
+    display: flex;
+    align-items: center;
+}
+
+.carousel-track {
+    display: flex;
+    overflow-x: auto;
+    /* Permite desplazamiento horizontal */
+    scroll-snap-type: x mandatory;
+    /* Engancha la vista en cada foto */
+    scrollbar-width: none;
+    /* Firefox */
+    width: 100%;
+}
+
+.carousel-track::-webkit-scrollbar {
+    display: none;
+    /* Chrome/Safari */
+}
+
+.carousel-img {
+    flex: 0 0 100%;
+    /* Cada imagen ocupa el 100% del contenedor */
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    /* Formato cuadrado tipo Instagram */
+    object-fit: cover;
+    /* Recorta la imagen para llenar el cuadrado sin deformar */
+    scroll-snap-align: start;
+    /* Alineación del scroll en el inicio de la imagen */
+    background-color: #cccccc;
+    /* Fondo por si la imagen tarda en cargar o da error */
+}
+
+/* Botones de navegación */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.75);
+    border: none;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #333;
+}
+
+.carousel-btn:hover {
+    background: rgba(255, 255, 255, 1);
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+}
+
+/* --- Información del Producto --- */
+.product-info {
+    padding: 0 5px;
+}
+
+.product-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.product-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+/* Etiqueta de Categoría */
+.product-category {
+    display: inline-block;
+    background-color: #d1e7dd;
+    color: #0f5132;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Etiqueta de Marca */
+.product-brand {
+    display: inline-block;
+    background-color: #e2e3e5;
+    color: #383d41;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Etiqueta de Talla */
+.product-size {
+    display: inline-block;
+    background-color: #cff4fc;
+    color: #055160;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Etiqueta de Precio */
+.product-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2b2b2b;
+    background-color: #f8f9fa;
+    padding: 4px 10px;
+    border-radius: 6px;
+    border: 1px solid #dee2e6;
+    margin-left: 10px;
+    white-space: nowrap;
+}
+
+.product-name {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0 0 8px 0;
+}
+
+/* Colores */
+.product-colors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.color-tag {
+    background: #f1f1f1;
+    color: #555;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    border: 1px solid #ccc;
+}
+
+.product-desc {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* Advertencias / Taras del producto */
+.product-warning {
+    color: #842029;
+    background-color: #f8d7da;
+    border: 1px solid #f5c2c7;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 13px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.no-results {
+    text-align: center;
+    color: #888;
+    padding: 20px;
+}
