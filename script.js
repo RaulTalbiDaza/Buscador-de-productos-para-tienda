@@ -255,6 +255,104 @@ const productos = [
             "imagenes/zapatillas_vans/defecto1.png",
             "imagenes/zapatillas_vans/defecto2.png"
         ]
+    },
+    {
+        nombre: "Adidas Stan Smith",
+        marca: "Adidas",
+        categoria: "Zapatillas",
+        talla: "TBD",
+        colores: ["Blanco"],
+        precio: "TBD €",
+        fotos: [
+            "imagenes/adidas_stan_smith/frente.PNG",
+            "imagenes/adidas_stan_smith/atras.PNG",
+            "imagenes/adidas_stan_smith/der_ext.PNG",
+            "imagenes/adidas_stan_smith/der_int.PNG",
+            "imagenes/adidas_stan_smith/izq_ext.PNG",
+            "imagenes/adidas_stan_smith/izq_int.PNG",
+            "imagenes/adidas_stan_smith/plantilla.PNG",
+            "imagenes/adidas_stan_smith/suela.PNG",
+            "imagenes/adidas_stan_smith/defecto1.PNG",
+            "imagenes/adidas_stan_smith/defecto2.PNG"
+        ]
+    },
+    {
+        nombre: "Deportivas Puma",
+        marca: "Puma",
+        categoria: "Deportivas",
+        talla: "TBD",
+        colores: ["TBD"],
+        precio: "TBD €",
+        fotos: [
+            "imagenes/deportivas_puma/frente.PNG",
+            "imagenes/deportivas_puma/atras.PNG",
+            "imagenes/deportivas_puma/der_ext.PNG",
+            "imagenes/deportivas_puma/der_int.PNG",
+            "imagenes/deportivas_puma/izq_ext.PNG",
+            "imagenes/deportivas_puma/izq_int.PNG",
+            "imagenes/deportivas_puma/plantilla.PNG",
+            "imagenes/deportivas_puma/suela.PNG"
+        ]
+    },
+    {
+        nombre: "Deportivas Skechers Azules",
+        marca: "Skechers",
+        categoria: "Deportivas",
+        talla: "44",
+        advertencia: "Pequeños huecos en la parte interior del zapato",
+        colores: ["Azul"],
+        precio: "14 €",
+        fotos: [
+            "imagenes/deportivas_skechers_azules/frente.PNG",
+            "imagenes/deportivas_skechers_azules/atras.PNG",
+            "imagenes/deportivas_skechers_azules/der_ext.PNG",
+            "imagenes/deportivas_skechers_azules/der_int.PNG",
+            "imagenes/deportivas_skechers_azules/izq_ext.PNG",
+            "imagenes/deportivas_skechers_azules/izq_int.PNG",
+            "imagenes/deportivas_skechers_azules/plantilla.PNG",
+            "imagenes/deportivas_skechers_azules/suela.PNG",
+            "imagenes/deportivas_skechers_azules/defecto1.PNG",
+            "imagenes/deportivas_skechers_azules/defecto2.PNG",
+            "imagenes/deportivas_skechers_azules/defecto3.PNG"
+        ]
+    },
+    {
+        nombre: "Deportivas Stradivarius",
+        marca: "Stradivarius",
+        categoria: "Deportivas",
+        talla: "36",
+        colores: ["Verde", "Marrón", "Rojo"],
+        precio: "7 €",
+        fotos: [
+            "imagenes/deportivas_stradivarius/frente.PNG",
+            "imagenes/deportivas_stradivarius/atras.PNG",
+            "imagenes/deportivas_stradivarius/der_ext.PNG",
+            "imagenes/deportivas_stradivarius/der_int.PNG",
+            "imagenes/deportivas_stradivarius/izq_ext.PNG",
+            "imagenes/deportivas_stradivarius/izq_int.PNG",
+            "imagenes/deportivas_stradivarius/plantilla.PNG",
+            "imagenes/deportivas_stradivarius/suela.PNG"
+        ]
+    },
+    {
+        nombre: "Skechers Negras",
+        marca: "Skechers",
+        categoria: "Deportivas",
+        talla: "43",
+        advertencia: "La suela tiene dos huecos en el puente del pie",
+        colores: ["Negro"],
+        precio: "20 €",
+        fotos: [
+            "imagenes/skechers_negras/frente.PNG",
+            "imagenes/skechers_negras/atras.PNG",
+            "imagenes/skechers_negras/der_ext.PNG",
+            "imagenes/skechers_negras/der_int.PNG",
+            "imagenes/skechers_negras/izq_ext.PNG",
+            "imagenes/skechers_negras/izq_int.PNG",
+            "imagenes/skechers_negras/suela.PNG",
+            "imagenes/skechers_negras/defecto1.PNG",
+            "imagenes/skechers_negras/defecto2.PNG"
+        ]
     }
 ];
 
